@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Movies</title>
+</head>
+<body>
+
+	{% for movie in movies.Search %}
+  <div class="col-xl-4 col-lg-4 my-3">
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+    <img src="{{movie.Poster}}" alt="avatar">
+		<h1>{{ movie.Title }}</h1>
+		<h3>{{movie.Genre}}</h3>
+		<h3>{{movie.Plot}}</h3>
+		<h1>--------------</h1>
+	    <br>
+	    <br>
+ </div>
+ </div>
+ </div>
+	{% endfor %}
+</body>
+</html>
